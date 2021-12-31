@@ -1,0 +1,789 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#"
+     xml:base="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-9="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Contains -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Contains">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Test"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Measurment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Has_Disease -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Has_Disease">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Patient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Disease"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Has_Test -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Has_Test">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Patient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Test"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Major -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Major">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#hasInteractionOn"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Minor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Minor">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#hasInteractionOn"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Moderate -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Moderate">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#hasInteractionOn"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Take_Medication -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Take_Medication">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Patient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Medication"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#TreatedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#TreatedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Patient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Doctor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#hasInteractionOn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#hasInteractionOn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Medication"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Medication"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#DoctorName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#DoctorName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Doctor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#End_Date -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#End_Date">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Med.Date"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Medication"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#HasData -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#HasData">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Test"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#HasName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#HasName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Disease"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#HasValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#HasValue">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Measurment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#ItemName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#ItemName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Measurment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Med.Date -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Med.Date">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Medication"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#MedicationName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#MedicationName">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Medication"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#PatientID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#PatientID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Patient"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#PatientName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#PatientName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Patient"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Start_Date -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Start_Date">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Med.Date"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Medication"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Disease -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Disease"/>
+    
+
+
+    <!-- http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Doctor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Doctor"/>
+    
+
+
+    <!-- http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Measurment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Measurment"/>
+    
+
+
+    <!-- http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#MeasurmentA -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#MeasurmentA">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Measurment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#MeasurmentB -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#MeasurmentB">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Measurment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Medication -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Medication"/>
+    
+
+
+    <!-- http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Patient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Patient">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#TreatedBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Doctor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#TreatedBy"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Doctor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Test -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Test">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Contains"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Measurment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#TestA -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#TestA">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Test"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#MeasurmentA"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#TestB -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#TestB">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Test"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#MeasurmentB"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Acetaminophen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Acetaminophen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Medication"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#SaberMed3"/>
+        <Minor rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Ranitidine"/>
+        <MedicationName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Acetaminophen</MedicationName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Ahmed -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Ahmed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Patient"/>
+        <Has_Disease rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Pyrexia"/>
+        <Take_Medication rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#AhmedMed1"/>
+        <Take_Medication rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#AhmedMed2"/>
+        <Take_Medication rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#AhmedMed3"/>
+        <TreatedBy rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Salah"/>
+        <PatientName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ahmed</PatientName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#AhmedMed1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#AhmedMed1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Medication"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Aspirin"/>
+        <End_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5/4/2021</End_Date>
+        <MedicationName>Aspirin</MedicationName>
+        <Start_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1/4/2021</Start_Date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#AhmedMed2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#AhmedMed2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Medication"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Clopidogrel"/>
+        <End_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15/4/2021</End_Date>
+        <MedicationName>Clopidogrel</MedicationName>
+        <Start_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1/3/2021</Start_Date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#AhmedMed3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#AhmedMed3">
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Insulin"/>
+        <End_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5/3/2021</End_Date>
+        <MedicationName>Insulin</MedicationName>
+        <Start_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3/3/2021</Start_Date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Amlodipine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Amlodipine">
+        <Minor rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Enalapril"/>
+        <MedicationName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amlodipine</MedicationName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Aspirin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Aspirin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Medication"/>
+        <Minor rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Rabeprazole"/>
+        <Moderate rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Insulin"/>
+        <MedicationName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aspirin</MedicationName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Asprin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Asprin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Medication"/>
+        <Moderate rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Enalpril"/>
+        <MedicationName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Asprin</MedicationName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Ciprofloxacin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Ciprofloxacin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Medication"/>
+        <MedicationName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ciprofloxacin</MedicationName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Ciprofloxcin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Ciprofloxcin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Medication"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#NadaMed1"/>
+        <Major rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Prednisolone"/>
+        <MedicationName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ciprofloxcin</MedicationName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Clopidogrel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Clopidogrel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Medication"/>
+        <MedicationName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clopidogrel</MedicationName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Diabetes_Mellitus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Diabetes_Mellitus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Disease"/>
+        <HasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Diabetes Mellitus</HasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Diclofenac -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Diclofenac">
+        <rdf:type rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Medication"/>
+        <Minor rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Ranitidine"/>
+        <MedicationName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Diclofenac</MedicationName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Enalapril -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Enalapril">
+        <rdf:type rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Medication"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#GamalMed1"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#IbrahimMed1"/>
+        <Major rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Spironolactone"/>
+        <Moderate rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Insulin"/>
+        <Moderate rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Metformin"/>
+        <MedicationName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Enalapril</MedicationName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Enalpril -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Enalpril">
+        <rdf:type rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Medication"/>
+        <MedicationName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Enalpril</MedicationName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Gamal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Gamal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Patient"/>
+        <Has_Disease rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Hypertension"/>
+        <Take_Medication rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#GamalMed1"/>
+        <Take_Medication rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#GamalMed2"/>
+        <TreatedBy rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Salah"/>
+        <PatientName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gamal</PatientName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#GamalMed1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#GamalMed1">
+        <End_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20/4/2021</End_Date>
+        <MedicationName>Enalapril</MedicationName>
+        <Start_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1/4/2021</Start_Date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#GamalMed2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#GamalMed2">
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Metformin"/>
+        <End_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10/2/2021</End_Date>
+        <MedicationName>Metformin</MedicationName>
+        <Start_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1/2/2021</Start_Date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Hypertension -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Hypertension">
+        <rdf:type rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Disease"/>
+        <HasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hypertension</HasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Ibrahim -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Ibrahim">
+        <rdf:type rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Patient"/>
+        <Has_Disease rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Diabetes_Mellitus"/>
+        <Take_Medication rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#IbrahimMed1"/>
+        <Take_Medication rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#IbrahimMed2"/>
+        <Take_Medication rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#IbrahimMed3"/>
+        <TreatedBy rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Salah"/>
+        <PatientName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ibrahim</PatientName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#IbrahimMed1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#IbrahimMed1">
+        <End_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20/4/2021</End_Date>
+        <MedicationName>Enalapril</MedicationName>
+        <Start_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1/4/2021</Start_Date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#IbrahimMed2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#IbrahimMed2">
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Theophylline"/>
+        <End_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1/4/2021</End_Date>
+        <MedicationName>Theophylline</MedicationName>
+        <Start_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6/3/2021</Start_Date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#IbrahimMed3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#IbrahimMed3">
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Tramadol"/>
+        <End_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15/4/2021</End_Date>
+        <MedicationName>Tramadol</MedicationName>
+        <Start_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20/3/2021</Start_Date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Insulin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Insulin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Medication"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#NadaMed3"/>
+        <MedicationName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Insulin</MedicationName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Ischemic_Heart_Disease -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Ischemic_Heart_Disease">
+        <rdf:type rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Disease"/>
+        <HasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ischemic Heart
+Disease</HasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Metformin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Metformin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Medication"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#SaberMed1"/>
+        <MedicationName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Metformin</MedicationName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Nada -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Nada">
+        <rdf:type rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Patient"/>
+        <Has_Disease rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Ischemic_Heart_Disease"/>
+        <Take_Medication rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#NadaMed1"/>
+        <Take_Medication rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#NadaMed2"/>
+        <Take_Medication rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#NadaMed3"/>
+        <TreatedBy rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Salah"/>
+        <PatientName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nada</PatientName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#NadaMed1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#NadaMed1">
+        <End_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20/4/2021</End_Date>
+        <MedicationName>Ciprofloxcin</MedicationName>
+        <Start_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1/4/2021</Start_Date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#NadaMed2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#NadaMed2">
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Prednisolone"/>
+        <End_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15/4/2021</End_Date>
+        <MedicationName>Prednisolone</MedicationName>
+        <Start_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5/3/2021</Start_Date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#NadaMed3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#NadaMed3">
+        <End_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5/4/2021</End_Date>
+        <MedicationName>Insulin</MedicationName>
+        <Start_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">23/3/2021</Start_Date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Prednisolone -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Prednisolone">
+        <rdf:type rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Medication"/>
+        <MedicationName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Prednisolone</MedicationName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Pyrexia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Pyrexia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Disease"/>
+        <HasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pyrexia</HasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Rabeprazole -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Rabeprazole">
+        <rdf:type rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Medication"/>
+        <Major rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Clopidogrel"/>
+        <MedicationName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rabeprazole</MedicationName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Ranitidine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Ranitidine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Medication"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#SaberMed2"/>
+        <Moderate rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Metformin"/>
+        <MedicationName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ranitidine</MedicationName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Saber -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Saber">
+        <rdf:type rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Patient"/>
+        <Has_Disease rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Diabetes_Mellitus"/>
+        <Take_Medication rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#SaberMed1"/>
+        <Take_Medication rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#SaberMed2"/>
+        <Take_Medication rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#SaberMed3"/>
+        <TreatedBy rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Salah"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#SaberMed1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#SaberMed1">
+        <End_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20/4/2021</End_Date>
+        <MedicationName>Metformin</MedicationName>
+        <Start_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1/4/2021</Start_Date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#SaberMed2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#SaberMed2">
+        <End_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15/4/2021</End_Date>
+        <MedicationName>Ranitidine</MedicationName>
+        <Start_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15/3/2021</Start_Date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#SaberMed3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#SaberMed3">
+        <End_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5/4/2021</End_Date>
+        <MedicationName>Acetaminophen</MedicationName>
+        <Start_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2/3/2021</Start_Date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Salah -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Salah">
+        <DoctorName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Salah</DoctorName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Spironolactone -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Spironolactone">
+        <rdf:type rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Medication"/>
+        <MedicationName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spironolactone</MedicationName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Theophylline -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Theophylline">
+        <rdf:type rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Medication"/>
+        <Major rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Ciprofloxacin"/>
+        <MedicationName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Theophylline</MedicationName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Tramadol -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Tramadol">
+        <rdf:type rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Medication"/>
+        <Major rdf:resource="http://www.semanticweb.org/omarm/ontologies/2021/11/untitled-ontology-9#Ciprofloxacin"/>
+        <MedicationName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tramadol</MedicationName>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
